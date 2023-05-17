@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "SF Pro Display"; /*Can be any text*/
+  src: local("ProductSansInfanity"),
+    url("../../assets/fonts/ProductSansInfanity.ttf") format("truetype");
+}
+
+html,
+body {
+  margin: unset;
+  padding: unset;
+  font-size: 15px;
+  font-family: "SF Pro Display";
+
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.countdown-wrapper {
+  width: 100%;
+  display: flex;
+  margin: 0 -8px 0 -8px;
+  justify-content: center;
+}
+
+.time-section {
+  padding: 0px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #254864 !important;
+}
+
+.time {
+  margin: 0;
+  font-size: 60px !important;
+  font-weight: 800 !important;
+}
+
+.small {
+  font-size: 18px !important;
+}
